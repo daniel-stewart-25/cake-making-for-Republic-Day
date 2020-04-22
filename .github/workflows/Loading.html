@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"></meta>
+     <title>Loading Bar animation</title> 
+     
+     <style>
+         
+         
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #262626; 
+}
+ ul
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;  
+    padding:0;  
+    display:flex; 
+}
+ul li
+{
+    list-style:none;
+    width:40px;
+    height:40px;
+    background:#fff;
+    border-radius:50%;
+    animation:animate 2.6s ease-in-out infinite ;
+}
+@keyframes animate
+{
+    0%,40%,100%
+    { 
+        transform:scale(0.2);
+    }
+    20%
+    {
+        transform:scale(1);
+    }
+}
+         
+         
+     </style>
+     </head>
+    <body><p style="color:red;padding-top:160px; padding-left:150px;font-size:20px;">LOADING...</p>
+        <ul>
+        <li style="background-color:orange;"></li>
+        <li style="background-color:orange;"></li>
+        <li style="background-color:orange;"></li>
+        <li >
+            
+         <ul>
+            <li style="background-color:blue;"></li>
+           </ul>
+        </li>
+        <li >
+             <ul>
+            <li style="background-color:blue;"></li>
+           </ul>
+            
+            
+        </li>
+        <li style="background-color:green;"></li>
+        <li style="background-color:green;"></li>
+        <li style="background-color:green;"></li>
+        </ul>
+    </body>
+</html>    
